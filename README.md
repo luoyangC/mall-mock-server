@@ -14,5 +14,5 @@ http://luoyangc.cn:22330
 npm install 或 cnpm install
 
 开发模式
-npm run serve
+npm run dev
 ```

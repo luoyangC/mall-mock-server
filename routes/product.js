@@ -11,35 +11,9 @@ const randomNum = (lower, upper) => {
   return Math.floor(Math.random() * (upper - lower)) + lower
 }
 
-// const sku = [
-//   {
-//     attributes: '颜色:白色,尺寸:m',
-//     currentPrice: 18.88,
-//     id: '22',
-//     inventory: 220,
-//     name: 'test',
-//     originalPrice: 220,
-//     picture: 'https://images.zhihuimingxing.com/Fmd9K7pUMycwut4kZbny70vrge5d',
-//     sales: 0,
-//     settlementPrice: 220,
-//     updateDate: '2019-08-13T05:42:56.000+0000'
-//   },
-//   {
-//     attributes: '颜色:黑色,尺寸:s',
-//     currentPrice: 9.99,
-//     id: '33',
-//     inventory: 10,
-//     name: 'test',
-//     originalPrice: 9,
-//     picture: 'https://images.zhihuimingxing.com/FgD6j9fbLclWZ1ih5eFKFCvsrFsz',
-//     sales: 0,
-//     settlementPrice: 101,
-//     updateDate: '2019-08-13T05:55:30.000+0000'
-//   }
-// ]
 const sku = [
   {
-    attributes: '颜色:白色,尺寸:m,产地:中国',
+    attributes: '颜色:白色,内存:8G,版本:国行',
     currentPrice: 18.88,
     id: '22',
     inventory: 220,
@@ -51,7 +25,7 @@ const sku = [
     updateDate: '2019-08-13T05:42:56.000+0000'
   },
   {
-    attributes: '颜色:白色,尺寸:l,产地:中国',
+    attributes: '颜色:白色,内存:16G,版本:国行',
     currentPrice: 18.88,
     id: '24',
     inventory: 220,
@@ -63,7 +37,19 @@ const sku = [
     updateDate: '2019-08-13T05:42:56.000+0000'
   },
   {
-    attributes: '颜色:黑色,尺寸:s,产地:日本',
+    attributes: '颜色:白色,内存:8G,版本:日版',
+    currentPrice: 9.99,
+    id: '31',
+    inventory: 220,
+    name: 'test',
+    originalPrice: 220,
+    picture: 'https://images.zhihuimingxing.com/Fmd9K7pUMycwut4kZbny70vrge5d',
+    sales: 0,
+    settlementPrice: 220,
+    updateDate: '2019-08-13T05:42:56.000+0000'
+  },
+  {
+    attributes: '颜色:黑色,内存:8G,版本:日版',
     currentPrice: 9.99,
     id: '33',
     inventory: 10,
@@ -86,7 +72,7 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < count; i++) {
   List.push(Mock.mock({
     id: '@increment',
-    name: '@title(2, 4)',
+    name: '测试商品-' + (i + 1),
     brand: '@title(1, 2)',
     'originalPrice|1000-10000': 1,
     'currentPrice|100-1000': 1,
