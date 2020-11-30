@@ -4,7 +4,7 @@
 
 可以直接使用线上地址 
 
-http://luoyangc.cn:22330
+http://www.luoyangc.cn:22330
 
 
 也可以下载本项目到本地进入项目目录然后运行
